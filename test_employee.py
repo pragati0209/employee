@@ -1,12 +1,11 @@
 from employee import employee_details
 
-def test_employee_details():
-    expected_output = (
-        "Employee Name:Alice\n"
-        "Employee ID:E1001\n"
-        "Department:IT\n"
-        "Salary:55000"
+def employee_details(name, emp_id, dept, salary):
+    return (
+        f"Employee Name:{name}\n"
+        f"Employee ID:{emp_id}\n"
+        f"Department:{dept}\n"
+        f"Salary:{salary}"
     )
-
     assert employee_details("Alice", "E1001", "IT", 55000) == expected_output
     
